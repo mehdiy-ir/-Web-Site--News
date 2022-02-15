@@ -1,0 +1,29 @@
+@media screen and (max-width: 1200px){
+    #up-bar #dis-none{
+        display: none;
+    }
+    #up-bar{
+        flex-wrap: wrap;
+    }
+    .col-5{
+        flex: 100%;
+        justify-content: center;
+    }
+    /*  +++++++++++ finish top nav ++++++++++++++  */
+    #bar-logo .col-3{
+        width: 100%;
+    }
+    #bar-logo .col-7{
+        width: 100%;
+    }
+    #bar-logo .col-3 img{
+        width: 30%;
+        height: 15vh;
+    }
+    #bar-logo .col-7 img{
+        width: 100%;
+
+    }
+
+
+}
