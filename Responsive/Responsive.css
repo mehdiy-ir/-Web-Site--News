@@ -1,3 +1,17 @@
+@media screen and (min-width: 1200px){
+    nav .list .search-res{
+        display: none;
+    }
+    nav .lable-chack{
+        display: none;
+    }
+    nav #chack{
+        display: none;
+    }
+    nav .col-4 .list .dropdwon .title i{
+       
+    }
+}
 @media screen and (max-width: 1200px){
     #up-bar #dis-none{
         display: none;
@@ -22,8 +36,103 @@
     }
     #bar-logo .col-7 img{
         width: 100%;
-
     }
 
+    /*  +++++++++++ start footer nav ++++++++++++++  */
+    nav{
+        overflow: hidden;
+        position: relative;
+    }
+    nav .col-4 #chack{
+        display: none;
+    }
+    nav .col-6 .search-box{
+        display: none;
+    }
+    nav .col-4 .list{
+        position: fixed;
+        z-index: 0;
+        display: flex;
+        flex-direction: column;
+        width:100%;
+        height: auto;
+        bottom: 100%;
+        top: 44.4%;
+        overflow: hidden;
+        transition: all 0.6s ease;
+    }
+    #chack:checked ~ .list{
+        bottom: 0;
+        height: auto;
+    }
+    nav .col-4 .line-bar{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        height: 100%;
+        margin-right: 10px;
+    }
+    nav .col-4 .lable-chack .line{
+       background-color: white;
+       height: 3px;
+       width: 25px;
+       margin: 2px 5%;   
+       transition: all 0.4s ease;
+    }
+    
+    #chack:checked ~ .lable-chack .line-bar .line:nth-child(1){
+        transform: translateY(7px) rotate(225deg);
+    }
+        
+    #chack:checked ~ .lable-chack .line-bar .line:nth-child(2){
+        opacity: 0;
+    }
+        
+    #chack:checked ~ .lable-chack .line-bar .line:nth-child(3){
+        transform: translateY(-7px) rotate(-225deg);
+    }
+    nav .col-4 .list li{
+       background-color: rgb(32, 32, 32);
+    }
+    nav .col-4 .list .dropdwon:hover .drop{
+        display: none;
+    }
+    nav .col-4 .list .search-res{
+        position: relative;
+        border-bottom: 2px solid rgb(177, 177, 177);
+        padding-bottom: 10px;
+    }
+    nav .col-4 .list .search-res .search-text{
+        font-size: 19px;
+        margin: 1% 10%;
+        height: 80%;
+        width: 80%;
+        border-radius: 3px;
+        border: 1px solid gray;
+    }
+    nav .col-4 .list .search-res .search-text::placeholder{
+        padding: 0  10%;
+    }
+    nav .col-4 .list .search-res .search-label{
+        color: rgb(31, 31, 31);
+        font-size: 19px;
+        position: absolute;
+        top: 27%;
+        right: 10%;
+        padding: 0 10px;
+        border-left: 1px solid gray;
+    }
+    nav .col-4 .list li .title{
+        justify-content: center;
+    }
+    nav .col-4 .list li .title:hover{
+        background-color: rgb(110, 110, 110);
+    }
+    nav .col-4 .list li .title::after{
+        display: none;
+    }
+        /*  +++++++++++ finish footer nav ++++++++++++++  */
+        /*  +++++++++++ finish navigation ++++++++++++++  */
 
 }
