@@ -13,9 +13,6 @@ body{
     max-width: 1200px;
     margin: 0 auto;
 }
-img{
-    background-origin: border-box;
-}
 
 /* +++++++++++ navigation ++++++++++++++ */
 #up-bar{
@@ -91,7 +88,7 @@ img{
     justify-content: space-between;
     border-bottom: 5px solid salmon;
 }
-#bar-logo img{
+#bar-logo .nav-logo{
     height: 18vh;
     width: 100%;
     object-fit: cover;
@@ -108,7 +105,7 @@ img{
 }
 
 /* +++++++++++ emd middel nav ++++++++++++++ */
-/* +++++++++++ start footer nav ++++++++++++++ */
+/* +++++++++++ start foot nav ++++++++++++++ */
 nav{
     background-color: rgb(39, 39, 39);
     height: 41px;
@@ -224,3 +221,73 @@ nav .col-6 .search-box .fine-label{
     padding-right: 5px;
 }
 
+/* +++++++++++ start footer ++++++++++++++ */
+footer{
+    margin-top: 10%;
+    background-color: rgb(41, 41, 41);
+    width: 100%;
+    height: 100%;
+}
+footer .col-3-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5%;
+}
+footer .img-footer{
+    overflow: hidden;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+footer .col-3-footer .img-fo{
+    width: 10%;
+    height: 100%;
+    object-fit: cover;
+}
+footer .col-3-footer .pargraph{
+    width: 80%;
+    font-size: 1em;
+    text-align: center;
+    color: white;
+}
+footer .contact-footer{
+    display: flex;
+    flex-direction: row;
+    margin: 2% 0;
+}
+footer .contact-footer .cont{
+    margin: 0 10%;
+    display: flex;
+    flex-direction: row;
+    font-size: 0.8em;
+    color: white;
+    white-space: nowrap;
+}
+footer .contact-footer .cont i{
+    margin: 0 10px;
+    font-size: 1.7em;
+    line-height: 17px;
+}
+footer .media-footer{
+    flex-direction: row;
+    margin: 10px 0;
+}
+footer .media-footer a{
+    margin: 0 1%;
+    color: white;
+    font-size: 1.5em;
+    transition: all 0.5s;
+}
+footer .media-footer a:hover{
+    color: rgb(0, 126, 199);
+    transform: scale(1.1);
+}
+footer .footer-botton{
+    width: 100%;
+    background-color: red;
+    text-align: center;
+    padding: 10px 0;
+} 
