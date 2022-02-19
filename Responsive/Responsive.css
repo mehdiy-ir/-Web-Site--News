@@ -41,8 +41,8 @@
 
     /*  +++++++++++ start footer nav ++++++++++++++  */
     nav{
-        overflow: hidden;
-        position: relative;
+        position: sticky;
+        z-index: 10;
     }
     nav .col-4 #chack{
         display: none;
@@ -51,21 +51,18 @@
         display: none;
     }
     nav .col-4 .list{
-        position: fixed;
-        margin-top: 1%;
-        z-index: 0;
-        display: flex;
-        flex-direction: column;
-        width:100%;
-        height: auto;
-        bottom: 100%;
-        top: 43%;
-        overflow: hidden;
-        transition: all 0.6s ease;
+        display: none;
     }
     #chack:checked ~ .list{
-        bottom: 0;
-        height: auto;
+        position: sticky;
+        z-index: 10;
+        margin-top: 0.2%;
+        display: flex;
+        flex-direction: column;
+        width: 200%;
+        height: 100%;
+        top: 0;
+        transition: all 0.6s ease;
     }
     nav .col-4 .line-bar{
         display: flex;
@@ -137,6 +134,15 @@
     }
         /*  +++++++++++ finish footer nav ++++++++++++++  */
         /*  +++++++++++ finish navigation ++++++++++++++  */
+        /*  +++++++++++ start body-2 ++++++++++++++  */
+        .body-2{
+            flex-wrap: wrap;
+        }
+        .body-2 .col-3{
+            width: 90%;
+            margin: 0 auto;
+        }
+        /*  +++++++++++ finish body-2 ++++++++++++++  */
         /*  +++++++++++ start footer ++++++++++++++  */
         footer .col-3-footer .img-fo-1{
             display: none;
