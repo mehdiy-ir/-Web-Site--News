@@ -24,6 +24,10 @@
         flex: 100%;
         justify-content: center;
     }
+    #main{
+        width: 100%;
+    }
+
     /*  +++++++++++ finish top nav ++++++++++++++  */
     #bar-logo .col-3{
         width: 100%;
@@ -156,6 +160,11 @@
             padding-top: 3%;
         }
         /*  +++++++++++ finish body-2 ++++++++++++++  */
+         /*  +++++++++++ start body-2 ++++++++++++++  */
+         #body-3 .col-8{
+             width: 100%;
+         }
+
         /*  +++++++++++ start footer ++++++++++++++  */
         footer .col-3-footer .img-fo-1{
             display: none;

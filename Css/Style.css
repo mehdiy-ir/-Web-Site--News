@@ -16,7 +16,7 @@ body{
     font-family: 'iranfont';
 }
 #main{
-    max-width: 80vw;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -114,6 +114,7 @@ body{
 nav{
     background-color: rgb(39, 39, 39);
     height: 50px;
+    width: 100%;
     box-shadow: 1px 2px 20px gray;
     display: flex;
     justify-content: space-around;
@@ -210,7 +211,7 @@ nav .col-6 .search-box{
     width: 50%;
 }
 nav .col-6 .search-box .text-fine{
-    padding: 5px;
+    padding: 8px;
     border-radius: 2px;
     border: 1px solid gray;
     width: 100%;
@@ -222,7 +223,7 @@ nav .col-6 .search-box .text-fine::placeholder{
 nav .col-6 .search-box .fine-label{
     position: absolute;
     left: 5px;
-    top: 4px;
+    top: 3px;
     z-index: 1;
     color: rgb(56, 56, 56);
     border-right: 1px solid gray;
@@ -231,6 +232,8 @@ nav .col-6 .search-box .fine-label{
 /* +++++++++++ start body-2 ++++++++++++++ */
 #body-2{
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1200' height='700' preserveAspectRatio='none' viewBox='0 0 1200 700'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1092%26quot%3b)' fill='none'%3e%3crect width='1200' height='700' x='0' y='0' fill='url(%23SvgjsLinearGradient1093)'%3e%3c/rect%3e%3cpath d='M0 0L369.47 0L0 29.61z' fill='rgba(255%2c 255%2c 255%2c .1)'%3e%3c/path%3e%3cpath d='M0 29.61L369.47 0L552.49 0L0 234.87z' fill='rgba(255%2c 255%2c 255%2c .075)'%3e%3c/path%3e%3cpath d='M0 234.87L552.49 0L829.28 0L0 300.76z' fill='rgba(255%2c 255%2c 255%2c .05)'%3e%3c/path%3e%3cpath d='M0 300.76L829.28 0L867.3199999999999 0L0 438.53999999999996z' fill='rgba(255%2c 255%2c 255%2c .025)'%3e%3c/path%3e%3cpath d='M1200 700L1175.49 700L1200 569.38z' fill='rgba(0%2c 0%2c 0%2c .1)'%3e%3c/path%3e%3cpath d='M1200 569.38L1175.49 700L1144.43 700L1200 566.76z' fill='rgba(0%2c 0%2c 0%2c .075)'%3e%3c/path%3e%3cpath d='M1200 566.76L1144.43 700L683.6800000000001 700L1200 526.46z' fill='rgba(0%2c 0%2c 0%2c .05)'%3e%3c/path%3e%3cpath d='M1200 526.46L683.68 700L303.29999999999995 700L1200 271.97z' fill='rgba(0%2c 0%2c 0%2c .025)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1092'%3e%3crect width='1200' height='700' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='10.42%25' y1='-17.86%25' x2='89.58%25' y2='117.86%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1093'%3e%3cstop stop-color='%230e2a47' offset='0'%3e%3c/stop%3e%3cstop stop-color='rgba(0%2c 156%2c 158%2c 1)' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
     margin: 10% auto;
     display: flex;
@@ -339,6 +342,166 @@ nav .col-6 .search-box .fine-label{
     height: 100%;
     object-fit: cover;
 }
+/* +++++++++++ end adv ++++++++++++++ */
+
+/* +++++++++++ start body3 ++++++++++++++ */
+#body-3{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin: 10% 0;
+}
+#body-3 .col-8 .up-right .slide-body3 img{
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    border-radius: 4px;
+}
+#body-3 .col-8 .up-right .slide-body3 img:hover{
+    transform: scale(1.1);
+    opacity: 0.5;
+}
+#body-3 .col-8{
+    width: 70%;
+    height: 100%;
+}
+#body-3 .col-8 .up-continer{
+    background-color: black;
+    height: 450px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 6px 5px 25px rgb(53, 53, 53);
+    border-radius: 4px;
+}
+#body-3 .col-8 .up-right{
+    position: absolute;
+    left: 0;
+    display: flex;
+    width: 100%;
+    transition: all 1s ease;
+}
+#body-3 .col-8 .up-right .slide-body3{
+    min-width: 100%;
+    min-height: 450px;
+    height: auto;
+    overflow: hidden;
+}
+#body-3 .col-8 .up-right .slide-body3 .title-body3{
+    position: absolute;
+    width: 100%;
+    top: 75%;
+}
+#body-3 .col-8 .up-right .slide-body3 .title-body3 .title-slide{
+    color: white;
+    font-size: 2.5rem;
+    padding-right: 5%;
+    font-weight: 700;
+    background-color: rgba(27, 27, 27, 0.5);
+}
+#body-3 .col-8 .up-right .slide-body3 .title-body3 .slide-text3{
+    color: white;
+    font-size: 1rem;
+    padding-right: 5%;
+    font-weight: 700;
+    background-color: rgba(27, 27, 27, 0.5);
+}
+/* +++++++++++++++++++++++++++ */
+#body-3 .down-right{
+    width: 100%;
+    margin-top: 11%;
+    border: 1px solid rgb(94, 94, 94);
+    padding: 5% 1% 1%;
+    position: relative;
+    background: linear-gradient(to right, #cfd9df, #e2ebf0);
+}
+#body-3 .down-right .title-discr{
+    background-color: rgb(63, 62, 65);
+    position: absolute;
+    z-index: 1;
+    top: -24px;
+    padding: 0 1%;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    right: 50%;
+    transform: translateX(50%);
+    width: 150px;
+    height: 50px;
+}
+#body-3 .down-right .discr-body3 .img-discr img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+#body-3 .down-right .discr-body3 .img-discr img:hover{
+    transform: scale(1.1);
+}
+#body-3 .down-right .discr-body3 .img-discr{
+    width: 30%;
+    overflow: hidden;
+    box-shadow: 5px 5px 10px gray;
+    border-left: 1px solid rgb(59, 59, 59);
+}
+#body-3 .down-right .discr-body3{
+    background: linear-gradient(to left, #bedfde, #637776);
+    display: flex;
+    border: 1px solid rgb(33, 33, 48);
+    box-shadow: 5px 5px 10px gray;
+    margin: 2% 0;
+}
+#body-3 .down-right .discr-body3 .down-text{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 3px;
+}
+#body-3 .down-right .discr-body3 .down-text h1{
+    text-align: center;
+    order: 2;
+    color: white;
+    font-size: 1.4em;
+    width: 100%;
+}
+#body-3 .down-right .discr-body3 .down-text h4{
+    background-color: red;
+    width: 10vw;
+    text-align: center;
+    margin: 1% 0;
+    font-size: 1rem;
+}
+#body-3 .down-right .discr-body3 .down-text h5{
+    padding-left: 5%;
+    font-size: 1.2em;
+    color: white;
+}
+#body-3 .down-right .discr-body3 .down-text a{
+    background-color: rgb(167, 48, 48);
+    text-decoration: none;
+    width: 20%;
+    font-size: 1.2em;
+    text-align: center;
+    color: white;
+    order: 3;
+    margin: 1% 75%;
+    transition: all 0.2s ease;
+    border-radius: 2px;
+}
+#body-3 .down-right .discr-body3 .down-text a:hover{
+    transform: scale(1.1);
+}
+#body-3 .down-right .discr-body3 .down-text .down-text2{
+    order: 1;
+    display: flex;
+    background-color: rgb(33, 99, 99);
+    align-items: center;
+    justify-content: space-between;
+}
+
 
 
 /* +++++++++++ start footer ++++++++++++++ */
