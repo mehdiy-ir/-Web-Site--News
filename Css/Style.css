@@ -231,7 +231,7 @@ nav .col-6 .search-box .fine-label{
 }
 /* +++++++++++ start body-2 ++++++++++++++ */
 #body-2{
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1200' height='700' preserveAspectRatio='none' viewBox='0 0 1200 700'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1092%26quot%3b)' fill='none'%3e%3crect width='1200' height='700' x='0' y='0' fill='url(%23SvgjsLinearGradient1093)'%3e%3c/rect%3e%3cpath d='M0 0L369.47 0L0 29.61z' fill='rgba(255%2c 255%2c 255%2c .1)'%3e%3c/path%3e%3cpath d='M0 29.61L369.47 0L552.49 0L0 234.87z' fill='rgba(255%2c 255%2c 255%2c .075)'%3e%3c/path%3e%3cpath d='M0 234.87L552.49 0L829.28 0L0 300.76z' fill='rgba(255%2c 255%2c 255%2c .05)'%3e%3c/path%3e%3cpath d='M0 300.76L829.28 0L867.3199999999999 0L0 438.53999999999996z' fill='rgba(255%2c 255%2c 255%2c .025)'%3e%3c/path%3e%3cpath d='M1200 700L1175.49 700L1200 569.38z' fill='rgba(0%2c 0%2c 0%2c .1)'%3e%3c/path%3e%3cpath d='M1200 569.38L1175.49 700L1144.43 700L1200 566.76z' fill='rgba(0%2c 0%2c 0%2c .075)'%3e%3c/path%3e%3cpath d='M1200 566.76L1144.43 700L683.6800000000001 700L1200 526.46z' fill='rgba(0%2c 0%2c 0%2c .05)'%3e%3c/path%3e%3cpath d='M1200 526.46L683.68 700L303.29999999999995 700L1200 271.97z' fill='rgba(0%2c 0%2c 0%2c .025)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1092'%3e%3crect width='1200' height='700' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='10.42%25' y1='-17.86%25' x2='89.58%25' y2='117.86%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1093'%3e%3cstop stop-color='%230e2a47' offset='0'%3e%3c/stop%3e%3cstop stop-color='rgba(0%2c 156%2c 158%2c 1)' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+    background: linear-gradient(to right, #cfd9df, #e2ebf0);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -349,7 +349,10 @@ nav .col-6 .search-box .fine-label{
     width: 100%;
     height: 100%;
     display: flex;
+    flex-wrap: wrap;
     margin: 10% 0;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
 }
 #body-3 .col-8 .up-right .slide-body3 img{
     width: 100%;
@@ -366,6 +369,8 @@ nav .col-6 .search-box .fine-label{
 #body-3 .col-8{
     width: 70%;
     height: 100%;
+    border-left: 1px solid black;
+    padding: 10px 10px 50px;
 }
 #body-3 .col-8 .up-continer{
     background-color: black;
@@ -503,6 +508,113 @@ nav .col-6 .search-box .fine-label{
 }
 
 
+/* +++++++++++++++++++++++++++ */
+
+
+#body-3 .body3-left{
+    height: 100%;
+    width: 30%;
+    padding-right: 10px;
+}
+#body-3 .body3-left .Comment{
+    position: relative;
+    padding-bottom: 15%;
+}
+#body-3 .body3-left .Comment .comment-box{
+    margin-top: 50px;
+    width: 100%;
+    height: 350px;
+    overflow:auto;
+    box-shadow: 10px 10px 20px gray;
+    border: 3px solid rgb(122, 147, 161);
+    border-radius: 2px;
+}
+#body-3 .body3-left .Comment .comment-title{
+    position:absolute;
+    background: rgb(53, 53, 53);
+    border-radius: 1px;
+    font-size: 1.1em;
+    color: white;
+    padding: 0 10px;
+    top: -50px;
+    right: 2%;
+}
+#body-3 .body3-left .Comment .person{
+    display: flex;
+    margin: 2% 0;
+    background-color: rgb(231, 240, 240);
+    border: 0.5px solid black;
+}
+#body-3 .body3-left .Comment .person img{
+    width: 40%;
+    height: 120px;
+    object-fit: cover;
+    border: 1px solid rgb(75, 87, 92);
+    margin: auto;
+}
+#body-3 .body3-left .Comment .person .comment-text{
+    padding-top: 3.5%;
+    width: 70%;
+    text-align: center;
+}
+#body-3 .body3-left .Comment .person .comment-text .name{
+    text-align: center;
+    padding-right: -3%;
+    font-size: 1.2em;
+    background-color: royalblue;
+}
+/* ++++++++++++++++++++++++++++ */
+#body-3 .middel-news{
+    position: relative;
+    border-top: 2px solid black;
+}
+#body-3 .middel-news .title-hotnews{
+    position: absolute;
+    top: 0%;
+    background: rgb(53, 53, 53);
+    font-size: 1.1em;
+    color: white;
+    padding: 0 10px;
+}
+#body-3 .hot-news{
+    width: 100%;
+    height: 290px;
+    background-color: aqua;
+    margin-top: 15%;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid black;
+    border-radius: 2px;
+}
+#body-3 .hot-news .middel-left{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    transition: all 0.8s ease;
+}
+#body-3 .hot-news .middel-left .slide-bodyleft{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#body-3 .hot-news .middel-left .slide-bodyleft img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#body-3 .hot-news .middel-left .slide-bodyleft .title-bodyleft{
+    position: absolute;
+    z-index: 1;
+    top: 75%;
+    width: 100%;
+    padding-right: 10px;
+    background-color: rgba(115, 209, 7, 0.5);
+}
+
+
+
+
 
 /* +++++++++++ start footer ++++++++++++++ */
 footer{
@@ -565,7 +677,7 @@ footer .media-footer a{
     transition: all 0.5s;
 }
 footer .media-footer a:hover{
-    color: rgb(0, 126, 199);
+    color: rgb(40, 118, 163);
     transform: scale(1.1);
 }
 footer .footer-botton{

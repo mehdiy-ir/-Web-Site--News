@@ -163,8 +163,23 @@
          /*  +++++++++++ start body-2 ++++++++++++++  */
          #body-3 .col-8{
              width: 100%;
+            padding: 0;
          }
-
+         #body-3 .body3-left{
+             width: 100%;
+             margin: 0 10%;
+         }
+         #body-3 .body3-left .Comment .comment-title{
+             top: 0%;
+         }
+         #body-3 .body3-left .Comment{
+             border-top: solid 3px black;
+             margin-top: 10%;
+             padding: 6%;
+         }
+         #body-3 .hot-news{
+            margin-top: 10%;
+         }
         /*  +++++++++++ start footer ++++++++++++++  */
         footer .col-3-footer .img-fo-1{
             display: none;
