@@ -61,7 +61,6 @@
         position: sticky;
         z-index: 10;
         margin-top: 0.2%;
-
         display: flex;
         flex-direction: column;
         width: 200%;
@@ -120,9 +119,7 @@
         width: 80%;
         border-radius: 3px;
         border: 1px solid gray;
-    }
-    nav .col-4 .list .search-res .search-text::placeholder{
-        padding: 0  10%;
+        padding: 0 5%;
     }
     nav .col-4 .list .search-res .search-label{
         color: rgb(31, 31, 31);
@@ -146,6 +143,23 @@
     }
         /*  +++++++++++ finish footer nav ++++++++++++++  */
         /*  +++++++++++ finish navigation ++++++++++++++  */
+        
+        /*  +++++++++++ start body-1 ++++++++++++++  */
+        #body-1 .slide-continer-1{
+            width: 100%;
+            margin: 10% 3%;
+        }
+        .left-body-1{
+            width: 100%;
+            justify-content: center;
+        }
+        .left-body-1 .small-card{
+            width: 45%;
+        }
+        .left-body-1 .small-card .card-text{
+            margin: -10px auto;
+        }
+        /*  +++++++++++ end body-1 ++++++++++++++  */
         /*  +++++++++++ start body-2 ++++++++++++++  */
         #body-2{
             flex-wrap: wrap;
@@ -161,6 +175,9 @@
         }
         /*  +++++++++++ finish body-2 ++++++++++++++  */
          /*  +++++++++++ start body-2 ++++++++++++++  */
+         #body-3{
+             margin: 10% 0;
+         }
          #body-3 .col-8{
              width: 100%;
             padding: 0;
